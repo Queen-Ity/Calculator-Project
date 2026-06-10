@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="Vacancy-page">
+    <nav
+      class="navbar navbar-expand-lg sticky-top"
+      style="background-color: #2563a8"
+      data-bs-theme="dark"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Take-Home PayCalculator</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link" href="Calculator.html">Calculator</a>
+            <a class="nav-link" href="About.html">About</a>
+            <a class="nav-link active" href="Vacancies.html" class="active"
+              >Vacancies</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="job-container">
+      <div class="job-page">
+        <div class="job-one">
+        <p style="text-align: left; font-weight: bold;">Find Your  <br>
+        <span style="color: blue; font-weight:bold;">Opportunity Across Nigeria</span></p>
+        <p style="text-align:left;color:#D6E8FF;">Search for recent Vacancies, explore job details and <br> apply for the right role for you</p>
+        <div  style="display: flex; gap: 30px; margin: 10px;margin: auto;">
+          <div><button style="color: white; background-color:blue; font-weight:bold; border: 1px solid blue; height: 50px; border-radius:5px;">🔍 Search Jobs</button> </div>
+          <div><button style="color: blue; font-weight: bold; background-color:#D6E8FF; border: 1px solid blue; height: 50px; border-radius: 5px;">Browse Job Vacancies</button></div>
+        </div>
+      </div>
+      <div class="job-two">
+        <img src="images/dessssk.png" alt="office settings" style="height: 200px; width:90%; object-fit: cover;">
+      </div>
+      </div>
+
+      <div class="job-search">
+        <div class="search">
+          <label class="vac-label" for="">Job Titles/Keywords</label>
+          <input style="color:black; background-color:#D6E8FF;height: 60px; width:100%;border: 0.5px solid gray;" type="search" placeholder="🔍Try 'Designer', 'Nurse' etc" id="keywordInput">
+          </select>
+        </div>
+        <div class="search">
+          <label class="vac-label" for="">Location</label>
+          <select class="vac-input" id="locationInput">
+            <option value="">All Nigeria</option>
+          </select>
+        </div>
+        <div class="search">
+          <label class="vac-label" for="">Job Category</label>
+          <select class="vac-input" id="categoryInput">
+<option value="">All Categories</option></select>
+        </div>
+        <div class="search">
+          <button type="submit" onclick="searchJobs()"        style="background-color:#2563a8; color: white; font-weight: bold; border: 1px solid blue;height: 50px; border-radius: 5px; width:70%;margin-top:50px;">Search Jobs</button>
+        </div>
+      </div> 
+      <div class="jobLink" id="jobResults">
+    </div>        
+    </div>
+    <script src="js/bootstrap.js">
+    </script>
+    <script src="js/vacancyJs.js"></script>
+  </body>
+</html>

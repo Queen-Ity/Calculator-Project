@@ -1,0 +1,425 @@
+.home-page {
+  background-color: #dce9f7;
+}
+.header {
+  padding: 5px 0;
+  align-items: center;
+  border: 1px solid lightgray;
+  border-top: 1px;
+  border-left: 1px;
+  border-right: 1px;
+}
+.nav-container {
+  display: flex;
+}
+.home {
+  font-size: bold;
+  font-family: Arial, sans-serif;
+  color: darkblue;
+  padding: 25px;
+}
+.link-gang {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin-top: 0;
+  margin-left: auto;
+  font-family: Arial, sans-serif;
+  font-weight: bolder;
+  font-size: 20px;
+  padding: 25px;
+}
+a {
+  text-decoration: none;
+  color: darkblue;
+}
+.main-container {
+  display: flex;
+  margin-top: -17px;
+  padding: 25px;
+}
+.main-one {
+  height: 400px;
+  width: 50%;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+  padding: 25px;
+}
+.main-two {
+  width: 50%;
+  height: 400px;
+  align-content: center;
+  display: flex;
+  justify-content: center;
+  border-top-left-radius: 800px;
+  border-bottom-left-radius: 800px;
+  margin-top: -20px;
+  padding: 25px;
+}
+.carrier {
+  height: 300px;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  padding: 25px;
+  font-size: 25px;
+}
+.Accurate {
+  height: 300px;
+  width: 33%;
+  margin-inline: 5px;
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+  border: 2px solid #c5cae9;
+  color: darkblue;
+  align-content: center;
+}
+.carriage {
+  height: 300px;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  padding: 25px;
+  font-size: 25px;
+}
+.Enter {
+  height: 300px;
+  width: 33%;
+  margin-inline: 5px;
+  font-family: Arial, sans-serif;
+  border-radius: 10px;
+  border: 2px solid #c5cae9;
+  color: darkblue;
+  align-content: center;
+}
+.fourth {
+  height: 250px;
+  width: 100%;
+  background-color: #2563a8;
+  display: flex;
+  border-radius: 10px;
+  padding: 25px;
+  margin-top: 20px;
+}
+.Ready {
+  height: 250px;
+  width: 50%;
+  margin-inline: 5px;
+  text-align: center;
+  margin: 5px;
+  align-content: center;
+}
+.last {
+  height: 300px;
+  width: 100%;
+  display: flex;
+  text-align: center;
+}
+.last-one {
+  height: 300px;
+  width: 25%;
+  background-color: #2563a8;
+  color: black;
+  padding: 25px;
+  font-size: 20px;
+}
+/* calculator */
+.calculator-page {
+  background-color: #0a1628;
+  background-image:
+    radial-gradient(
+      ellipse 80% 60% at 20% 10%,
+      rgba(26, 86, 219, 0.35) 0%,
+      transparent 60%
+    ),
+    radial-gradient(
+      ellipse 60% 50% at 80%,
+      rgba(59, 130, 246, 0.2) 0%,
+      transparent 55%
+    ),
+    radial-gradient(
+      ellipse 40% 40% at 50%,
+      rgba(13, 45, 107, 0.8) 0%,
+      transparent 70%
+    );
+}
+.cal {
+  background-color: darkblue;
+  display: flex;
+}
+.page-two {
+  width: 100%;
+  color: white;
+  text-align: center;
+  font-weight: bolder;
+}
+.details {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+.form-group {
+  margin-bottom: 20px;
+  width: 90%;
+  margin: 45px;
+}
+.lab {
+  font-weight: bold;
+  color: gray;
+  
+}
+input {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: lightgray;
+  margin-top: 20px;
+}
+/* results */
+.results {
+  background-color: #0d1f3c;
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  margin-left: 30px;
+  margin-right: 30px;
+  justify-items: center;
+  justify-self: center;
+}
+.sub {
+  display: flex;
+  text-align: center;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  color: white;
+  font-weight: bold;
+  margin: 20px;
+}
+
+.two {
+  height: 50px;
+  width: 50%;
+  color: #ffd700;
+}
+/* About-page */
+.About-page {
+    background:
+        radial-gradient(
+            circle at 50% 55%,
+            rgba(0, 92, 255, 0.45) 0%,
+            rgba(0, 56, 168, 0.25) 30%,
+            transparent 60%
+        ),
+        linear-gradient(
+            135deg,
+            #020024,
+            #021B79,
+            #0038A8
+        );
+}
+.About-head {
+  padding: 20px 0;
+  align-items: center;
+}
+.aboutText {
+  color: #d6e8ff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.cont {
+  display: flex;
+}
+
+.active {
+  border-bottom: 2px solid darkblue;
+}
+p {
+  text-align: center;
+  font-weight: lighter;
+  margin-top: auto;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.How {
+  height: 300px;
+  width: 90%;
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+  text-align: center;
+  justify-self: center;
+}
+.process {
+  height: 300px;
+  width: 25%;
+  color: #d6e8ff;
+  border: 1px solid darkblue;
+  align-content: center;
+  border-radius: 25px;
+}
+.third-section{
+  height: 300px;
+  width:100%;
+  display: flex;
+  padding: 25px;
+}
+.who{
+height: 300px;
+width: 50%;
+padding: 35px;
+font-weight: bold;
+padding: 25px;
+color:#d6e8ff;
+}
+.aboutFinal{
+  height: 100px;
+  background-color:darkblue;
+  width:100%;
+  display: flex;
+  
+}
+.aboutLast{
+  height: 100px;
+  width: 50%;
+  color: #d6e8ff;
+  padding: 25px;
+  font-weight: bold;
+  font-size:17px;
+}
+/* login-page */
+.login-page {
+  background-color: #dce9f7;
+}
+.login-container {
+  height: 550px;
+  width: 900px;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.video {
+  height: 550px;
+  width: 40%;
+}
+.video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.login {
+  height: 550px;
+  width: 60%;
+  background-image: url("loginBackground.jpeg");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.texts {
+  height: auto;
+  min-height: 400px;
+  padding: 40px;
+  width: 80%;
+  margin: 20px auto;
+  border-radius: 20px;
+  border: 1px solid blue;
+  background-color: #000b2c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 20px;
+}
+
+input {
+  background-color: #000b2c;
+  color: white;
+  border: 1px solid blue;
+  border-radius: 9px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.remember {
+  display: flex;
+  justify-content: space-between;
+  
+  width: 100%;
+}
+.remember a {
+  color: #4a90ff;
+  text-decoration: none;
+  font-size: 14px;
+}
+.remember label {
+  display: flex;
+  align-items: center;
+  color: gray;
+  font-size: 14px;
+}
+.signUp {
+  font-size: 15px;
+  color: gray;
+}
+/* Vacancy page */
+.Vacancy-page {
+  background: linear-gradient(
+    135deg,
+    #0f1f4b 0%,
+    #1e3a8a 35%,
+    #2563eb 70%,
+    #3b82f6 100%
+  );
+}
+.job-container {
+  height: 400px;
+  width: 100%;
+  padding: 20px;
+}
+.job-page {
+  display: flex;
+  height: 300px;
+  width: 100%;
+  display: flex;
+}
+.job-one {
+  height: 300px;
+  width: 50%;
+}
+.job-two {
+  height: 200px;
+  padding: 25px;
+  width: 50%;
+}
+.job-search {
+  height: 300px;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  padding: 100px;
+}
+.search {
+  height: 200px;
+  width: 100%;
+  align-content: center;
+  background-color: linear-gradient(135deg, #1e4d8f, #2d6cdf);
+}
+.vac-input {
+  height: 60px;
+  width: 75%;
+  border-radius: 10px;
+  background-color: #d6e8ff;
+}
+.vac-label {
+  color: #d6e8ff;
+  padding: 10px;
+}
+.jobLink {
+  color: #d6e8ff;
+  height: 200px;
+  width: 100%;
+  font-weight: bold;
+  border: 1px blue;
+}
+.one {
+  height: 100px;
+  width: 100%;
+}

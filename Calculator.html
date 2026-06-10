@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="calculator-page">
+    <nav
+      class="navbar navbar-expand-lg sticky-top"
+      style="background-color: #2563a8"
+      data-bs-theme="dark"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Take-Home PayCalculator</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link" aria-current="page" href="index.html"
+              >Home</a
+            >
+            <a class="nav-link active" href="Calculator.html"
+              >Calculator</a
+            >
+            <a class="nav-link" href="About.html">About</a>
+            <a class="nav-link" href="Vacancies.html">Vacancies</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="details">
+      <p
+        style="
+          font-family: Arial, Helvetica, sans-serif;
+          color: white;
+          font-weight: bolder;
+          font-size: 40px;
+        "
+      >
+        Your Take-Home Pay <br />
+        At a Glance
+      </p>
+      <p style="font-weight: bolder; color: gray">Enter Your Details below:</p>
+      <br />
+      <form action="">
+        <div class="form-group">
+          <label for="" class="lab">JOB TITLE</label> <br />
+          <input type="text" id="jobTitle" placeholder="e.g Web Developer" />
+          <br />
+        </div>
+
+        <div class="form-group">
+          <label for="" class="lab">HOURS WORKED PER WEEK</label> <br />
+          <input
+            type="number"
+            placeholder="e.g 30"
+            name=""
+            id="hoursWorked"
+          /><br />
+        </div>
+        <div class="form-group">
+          <label for="" class="lab">GROSS PAY (Monthly)</label> <br />
+          <input type="text" id="grossPay" placeholder="e.g ₦30000" /> <br />
+        </div>
+        <div class="form-group">
+          <label for="" class="lab">PAY TIME PERIOD</label> <br />
+          <input type="month" id="payPeriod" placeholder="optional" /> <br />
+        </div>
+        <div class="form-group">
+          <label for="" class="lab">TAX RATE(%)</label> <br />
+          <input type="number" id="taxRate" placeholder="% e.g 20" /> <br />
+        </div>
+
+        <br />
+        <button
+          class="calculation"
+          type="button"
+          onclick="calculatePay()"
+          style="
+            background-color: darkblue;
+            border-radius: 10px;
+            height: 50px;
+            color: white;
+            border: 1px solid black;
+          "
+        >
+          Calculate my Result
+        </button>
+      </form>
+    </div>
+    <br />
+    <div class="results">
+      <p
+        style="
+          text-align: center;
+          margin-top: auto;
+          color: white;
+          font-weight: bolder;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 30px;
+        "
+      >
+        💰 Your Take-Home Pay Results
+      </p>
+      <div class="sub">
+        ⏰Take-Home Pay PerHour:
+        <span class="two" id="perHour">₦</span>
+      </div>
+      <div class="sub">
+        🧮Take-Home Pay Per Week:
+        <span class="two" id="perWeek">₦</span>
+      </div>
+      <div class="sub">
+        📆Take-Home Pay Per Month:
+        <span class="two" id="perMonth">₦</span>
+      </div>
+      <div class="sub">
+        📆Take-Home Pay Per Year:
+        <span class="two" id="perYear">₦</span>
+      </div>
+    </div>
+  </body>
+  <script src="js/js.js"></script>
+  <script src="js/bootstrap.js"></script>
+</html>

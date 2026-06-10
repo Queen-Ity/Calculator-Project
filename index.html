@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+   <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="home-page">
+    
+    <nav class="navbar navbar-expand-lg sticky-top" style="background-color: #2563a8;" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Take-Home PayCalculator</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link active" aria-current="page" href="index.html" class="active">Home</a>
+            <a class="nav-link" href="Calculator.html">Calculator</a>
+            <a class="nav-link" href="About.html">About</a>
+            <a class="nav-link" href="Vacancies.html">Vacancies</a>
+            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#signin">Sign In</a>
+            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#signup">Sign Up</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Modal 1 -->
+    <div class="modal fade" id="signin" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">Sign In</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="login-container">
+              <div class="video">
+                <video autoplay muted loop playsinline>
+                  <source src="/images/calculator-video.mp4" type="video/mp4" />
+                </video>
+              </div>
+              <div class="login">
+                <div class="texts">
+                  <img
+                    src="images/new-calculator.png"
+                    style="height: 120px; display: block; width: 100px"
+                    alt="Calculator image"
+                  />
+                  <h4 style="color: white; margin-top: -5px;">Welcome to our Platform!!!</h4>
+                  
+                  <input type="Email" placeholder="Email address" />
+                  <input type="password" placeholder="password" />
+                  <div class="remember">
+                    <label><input type="checkbox"/>Remember me</label>
+                    <a href="#">Forgot password</a>
+                  </div>
+                  <button style="width:100%;padding:9px; background-color: blue;border-radius:9px; border: 1px solid #000b2c; color: white; font-weight: bold;">Sign In</button>
+                  <p style="color: gray; font-size: 13px; margin: 10px">OR</p>
+                  <button style="background-color: #000b2c; color: white;border: 1px solid blue;border-radius: 9px;;
+                padding:9px;">Continue with Google</button>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+   <!-- modal 2 -->
+<div class="modal fade" id="signup" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">Sign Up</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="login-container">
+              <div class="video">
+                <video autoplay muted loop playsinline>
+                  <source src="images/calculator-video.mp4" type="video/mp4" />
+                </video>
+              </div>
+              <div class="login">
+                <div class="texts">
+                  <img
+                    src="images/new-calculator.png"
+                    style="height: 120px; display: block; width: 100px"
+                    alt="Calculator image"
+                  />
+                  <h4 style="color: white; margin-top: -5px;">Welcome to our Platform!!!</h4>
+                  
+                  <input type="text" placeholder="Username" />
+                  <input type="Email" placeholder="Email" />
+                  <input type="password" placeholder="Password">
+                  <button style="width:100%;padding:9px; background-color: blue;border-radius:9px; border: 1px solid #000b2c; color: white; font-weight: bold;">Create an account</button>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- modal 2 ends above -->
+
+    <br />
+    <div id="Home" class="main-container">
+      <div class="main-one">
+        <p style="background-color:darkblue; color:#dce9f7;; width: 40%">
+          Accurate.Instant.Reliable
+        </p>
+        <p style="font-size: 40px; color:darkblue; font-weight: bolder; text-align: left;">
+          SEE 👀 WHAT LANDS IN YOUR POCKET
+        </p>
+        <p style="color:#2563a8;text-align:left; font-size:20px; margin-top:-10px;">
+          Plan better. Save smarter. <br />Calculate accurate tax deductions,
+          <br />
+          salary and financial clarity.
+        </p>
+        <button type="submit" style="background-color:#2563a8; font-weight:bold; height:60px; width:40%;border-radius:30px; border: 1px solid#dce9f7;font-size: 15px;">
+<a href="Calculator.html" style="color: white;">Start Calculating➡️</a>        </button>
+        <button style="background-color:#dce9f7; border-radius:30px; height:50px;width:30%; border:2px solid #c5cae9;  font-size:15px;
+" ><a href="About.html" style="color: darkblue;">Learn More</a></button>
+      </div>
+      <div class="main-two">
+        <img src="images/calculatorman.png" width="100%" height="400px" alt="picture of a calculator" />
+      </div>
+    </div>
+  <br><br>
+    <!-- second griding -->
+    <div class="carrier">
+      <div class="Accurate">
+        💯
+        <div style="font-weight: bolder">Accurate</div>
+        <div style="color:#2563a8; font-size:14px;">
+          Easy to use for everyone, anytime.
+      </div>
+      </div>
+      <div class="Accurate">
+        💯 <div style="font-weight: bolder">Instant</div><div style="color:#2563a8;font-size:14px;">Get result
+        in seconds, everytime.</div>
+      </div>
+      <div class="Accurate">
+        💯<div style="font-weight: bolder">Reliable</div>
+        <div style="color:#2563a8;font-size:14px;">
+          Precise
+        calculation you can rely on.
+      </div>
+      </div>
+    </div>
+    <!-- third griding -->
+     <br><br><br><br>
+    <p
+      style="
+        text-align: center;
+        font-weight: bolder;
+        font-family: Arial, sans-serif;
+        color: darkblue;
+      "
+    >
+      How It Works
+    </p>
+    <div class="carriage">
+      <div class="Enter">
+        📑<br /><span style="font-weight: bolder">Enter Details</span> <br /><span style="color:#2563a8;font-size:14px;">Add
+        your salary and any applicable deductions.</span>
+      </div>
+      <div class="Enter">
+        🧮<br /><span style="font-weight: bolder">We Calculate</span> <br />
+        <span style="color:#2563a8;font-size:14px;">Our calculator does the math for you.</span>
+      </div>
+      <div class="Enter">
+        📶<br /><span style="font-weight: bolder">View Results</span><br />
+        <span style="color:#2563a8;font-size:14px;">See your take-home salary instantly.</span>
+      </div>
+    </div>
+    <br />
+    <!-- fourth griding -->
+    <div class="fourth">
+      <div class="Ready">
+        <p
+          style="
+            font-weight: bold;
+            text-align: left;
+            font-size: 20px;
+            font-family: Arial, sans-serif;
+            margin-inline-start: 30px;
+          "
+        >Ready to know your <br>
+          real earnings?
+        </p><p style="color: black; text-align: center;text-align: left;margin-top: -15px; margin-inline-start:30px;">Start calculating your take-home salary now.</p>
+      </div>
+      <div>
+        <button
+          type="submit"
+          style="
+            color:#2563a8;
+            background-color:#dce9f7;;
+            border-radius: 35px;
+            height:60px;
+            width:40%;
+            font-size: 15px;
+            margin-top:100px;
+            margin-inline-start: 300px;
+            font-weight: bold;
+            border: 1px solid #2563a8;
+        
+          "
+        >
+          <a href="Calculator.html">Try Calculating➡️</a>
+        </button>
+      </div>
+    </div>
+    <br />
+    <!-- last for homepage -->
+    <div class="last">
+      <div class="last-one">
+        <p style="font-weight:bold;">🧮TakeHome <span style="color: blue; font-weight: bold;">PayCalculator</span></p>
+        <p style="font-size:15px;">Accurate.Instant.Reliable <br />Your salary, your control.</p>
+      </div>
+      <div class="last-one">
+        <p style="font-weight: bold;">Quick Links</p>
+        <span><a style="font-weight: lighter; font-size: 15px;" href="Home.html">Home</a><br />
+        <a style="font-weight: lighter; font-size: 15px;" href="Calculator.html">Calculator</a><br>
+        <a style="font-weight: lighter;font-size: 15px;" href="About.html">About</a> <br>
+        <a style="font-weight: lighter; font-size: 15px;" href="Vacancies.html">Vacancies</a>
+      </div>
+      <div class="last-one">
+        <p style="font-weight: bold;">Contact</p>
+        <p style="font-size:15px;">Lagos, Nigeria <br />+234 805 069 7250 <br> calculatorsupport@yahoo.com</p>
+      </div>
+      <div class="last-one"><p style="font-weight:bolder;">Follow Us <br></p>
+      <p style="font-size: 15px;">Twitter <br>Facebook <br> instagram</p></div>
+    </div>
+
+    <script src="js/bootstrap.js"></script>
+  </body>
+</html>
