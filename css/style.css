@@ -18,6 +18,29 @@
   color: darkblue;
   padding: 25px;
 }
+.button{
+  color:#2563a8;
+            background-color:#dce9f7;;
+            border-radius: 35px;
+            height:60px;
+            width:40%;
+            font-size: 15px;
+            margin-top:100px;
+            margin-inline-start: 300px;
+            font-weight: bold;
+            border: 1px solid #2563a8;
+}
+.slogan{
+background-color:darkblue; 
+color:#dce9f7; 
+width: 40%;
+}
+.ready-b{
+  color: black; 
+  text-align: left;
+  margin-top: -15px; 
+  margin-inline-start:30px;
+}
 .link-gang {
   list-style: none;
   display: flex;
@@ -82,6 +105,8 @@ a {
   padding: 25px;
   font-size: 25px;
 }
+
+
 .Enter {
   height: 300px;
   width: 33%;
@@ -156,11 +181,11 @@ a {
 .details {
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
+  padding: 16px;
 }
-.form-group {
-  margin-bottom: 20px;
-  width: 90%;
-  margin: 45px;
+.calculator-page .form-group {
+  width: min(100%, 560px);
+  margin: 0 auto 20px;
 }
 .lab {
   font-weight: bold;
@@ -175,29 +200,79 @@ input {
   background-color: lightgray;
   margin-top: 20px;
 }
+.calculator-page input {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+}
 /* results */
 .results {
   background-color: #0d1f3c;
   border: 1px solid rgba(59, 130, 246, 0.3);
-  margin-left: 30px;
-  margin-right: 30px;
+  box-sizing: border-box;
+  width: min(calc(100% - 48px), 760px);
+  margin: 0 auto;
+  padding: 12px 24px;
   justify-items: center;
   justify-self: center;
 }
 .sub {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
   text-align: center;
   font-weight: bold;
   font-family: Arial, sans-serif;
   color: white;
   font-weight: bold;
-  margin: 20px;
+  margin: 20px 0;
 }
 
 .two {
-  height: 50px;
-  width: 50%;
+  min-width: 0;
+  flex: 0 1 auto;
   color: #ffd700;
+  overflow-wrap: anywhere;
+  text-align: right;
+}
+
+@media (max-width: 576px) {
+  .calculator-page .navbar-brand {
+    white-space: normal;
+    font-size: 1rem;
+  }
+
+  .calculator-page .details > p:first-child {
+    font-size: 30px !important;
+    padding: 12px 0;
+  }
+
+  .calculator-page .results {
+    width: calc(100% - 24px);
+    padding: 12px 16px;
+  }
+
+  .calculator-page .results > p {
+    font-size: 22px !important;
+    padding: 12px 0;
+  }
+
+  .calculator-page .sub {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+    font-size: 14px;
+  }
+
+  .calculator-page .two {
+    white-space: nowrap;
+    text-align: center;
+  }
+
+  .calculator-page .calculation {
+    max-width: 100%;
+  }
 }
 /* About-page */
 .About-page {
@@ -423,3 +498,469 @@ input {
   height: 100px;
   width: 100%;
 }
+
+
+@media (max-width: 768px) {
+  .home-page .main-container {
+    flex-direction: column;
+  }
+  .home-page .main-one,
+  .home-page .main-two {
+    width: 100%;
+    height: auto;
+  }
+  .home-page .main-one > button {
+    width: auto !important;
+    max-width: 100%;
+    padding: 0 12px;
+  }
+  .home-page .carrier,
+  .home-page .carriage {
+    flex-direction: column;
+    height: auto;
+  }
+  .home-page .Accurate,
+  .home-page .Enter {
+    width: 100%;
+    margin-inline: 0;
+    margin-bottom: 20px;
+  }
+  .home-page .carriage {
+    padding: 16px;
+  }
+  .home-page .Enter {
+    height: auto;
+    min-height: 180px;
+    padding: 24px;
+  }
+  .home-page .fourth {
+    height: auto;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .home-page .Ready {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+  .home-page .fourth .Ready p {
+    margin-inline-start: 0;
+  }
+  .home-page .ready-b {
+    margin: 0;
+  }
+  .home-page .button {
+    display: block;
+    width: min(100%, 240px);
+    margin: 16px auto 0;
+  }
+  .home-page .last {
+    height: auto;
+    flex-wrap: wrap;
+  }
+  .home-page .last-one {
+    box-sizing: border-box;
+    width: 50%;
+    height: auto;
+    min-width: 0;
+    padding: 16px;
+    overflow-wrap: anywhere;
+  }
+  .home-page .slogan {
+    width: 100%;
+  }
+  .home-page .eyes {
+    font-size: 20px;
+    color: darkblue;
+    font-weight: bolder;
+    text-align: left;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-page .last-one {
+    width: 100%;
+  }
+}
+
+/* About page */
+.About-page {
+  min-height: 100vh;
+  background-color: #081a32;
+  background-image:
+    radial-gradient(ellipse at 85% 10%, rgba(27, 101, 150, 0.28), transparent 38%),
+    linear-gradient(145deg, #081a32, #0c2541 58%, #12304c);
+  color: #e6eef8;
+}
+
+.about-content {
+  width: min(100% - 40px, 1080px);
+  margin: 0 auto;
+  padding: 48px 0;
+}
+
+.about-intro {
+  max-width: 760px;
+  padding: 28px 0 64px;
+}
+
+.about-kicker {
+  margin: 0 0 12px;
+  padding: 0;
+  color: #74d3c5;
+  font-size: 13px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.about-intro h1 {
+  margin: 0 0 20px;
+  color: #fff;
+  font-size: 48px;
+  line-height: 1.1;
+}
+
+.about-intro p:not(.about-kicker) {
+  max-width: 680px;
+  margin: 0 0 14px;
+  padding: 0;
+  color: #c5d5e8;
+  font-size: 18px;
+  line-height: 1.65;
+  text-align: left;
+}
+
+.about-intro .about-lead {
+  color: #fff;
+  font-size: 22px;
+}
+
+.about-process {
+  padding: 34px 0 48px;
+  border-top: 1px solid rgba(198, 219, 241, 0.2);
+}
+
+.section-heading h2,
+.who h2 {
+  margin: 0;
+  color: #fff;
+  font-size: 28px;
+}
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  margin: 24px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.About-page .process {
+  box-sizing: border-box;
+  width: auto;
+  height: auto;
+  min-height: 220px;
+  padding: 22px;
+  border: 1px solid rgba(198, 219, 241, 0.2);
+  border-radius: 8px;
+  background: rgba(16, 45, 72, 0.72);
+  color: #e6eef8;
+  text-align: left;
+}
+
+.process-number {
+  display: block;
+  margin-bottom: 28px;
+  color: #74d3c5;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.About-page .process h3 {
+  margin: 0 0 10px;
+  color: #fff;
+  font-size: 18px;
+}
+
+.About-page .process p {
+  margin: 0;
+  padding: 0;
+  color: #c5d5e8;
+  font-size: 15px;
+  line-height: 1.55;
+  text-align: left;
+}
+
+.about-details {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 40px;
+  padding: 36px 0 42px;
+  border-top: 1px solid rgba(198, 219, 241, 0.2);
+}
+
+.About-page .who {
+  width: auto;
+  height: auto;
+  padding: 0;
+  color: #c5d5e8;
+  font-weight: 400;
+}
+
+.About-page .who h2 {
+  margin-bottom: 16px;
+  font-size: 22px;
+}
+
+.About-page .who ul {
+  margin: 0;
+  padding-left: 20px;
+  line-height: 1.8;
+}
+
+.About-page .aboutFinal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  width: 100%;
+  height: auto;
+  margin-top: 8px;
+  padding: 24px 28px;
+  border: 1px solid rgba(116, 211, 197, 0.32);
+  border-radius: 8px;
+  background: rgba(12, 45, 67, 0.9);
+}
+
+.About-page .aboutLast {
+  width: auto;
+  height: auto;
+  padding: 0;
+  color: #e6eef8;
+  font-size: 16px;
+}
+
+.aboutLast p {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.about-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 48px;
+  padding: 0 18px;
+  border-radius: 5px;
+  background: #74d3c5;
+  color: #081a32;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.about-cta:hover {
+  color: #081a32;
+  background: #9ae5d9;
+}
+
+/* Vacancy page */
+.Vacancy-page .job-container {
+  box-sizing: border-box;
+  width: min(100%, 1240px);
+  height: auto;
+  margin: 0 auto;
+  padding: 32px 24px;
+}
+
+.Vacancy-page .job-page {
+  align-items: center;
+  gap: 28px;
+  height: auto;
+  min-height: 280px;
+}
+
+.Vacancy-page .job-one,
+.Vacancy-page .job-two {
+  box-sizing: border-box;
+  min-width: 0;
+  height: auto;
+}
+
+.Vacancy-page .job-one {
+  flex: 1;
+}
+
+.Vacancy-page .job-two {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.Vacancy-page .job-two img {
+  display: block;
+  width: 100% !important;
+  max-height: 300px;
+  height: auto !important;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.Vacancy-page .job-one > p:first-child {
+  margin: 0 0 16px;
+  padding: 0;
+  color: #fff;
+  font-size: 32px;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.Vacancy-page .job-one > p:first-child span {
+  color: #74d3c5 !important;
+}
+
+.Vacancy-page .job-one > p:nth-child(2) {
+  margin: 0 0 20px;
+  padding: 0;
+  color: #d6e8ff;
+  font-size: 17px;
+  line-height: 1.55;
+}
+
+.Vacancy-page .job-search {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  align-items: end;
+  gap: 12px;
+  width: 100%;
+  height: auto;
+  padding: 20px 0;
+  text-align: left;
+}
+
+.Vacancy-page .search {
+  box-sizing: border-box;
+  min-width: 0;
+  height: auto;
+  padding: 14px;
+  border: 1px solid rgba(214, 232, 255, 0.2);
+  border-radius: 8px;
+  background: rgba(15, 31, 75, 0.68);
+}
+
+.Vacancy-page .vac-label {
+  display: block;
+  padding: 0 0 8px;
+  text-align: left;
+}
+
+.Vacancy-page .job-search input,
+.Vacancy-page .vac-input {
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+}
+
+.Vacancy-page .job-search button {
+  width: 100% !important;
+  margin-top: 0 !important;
+}
+
+.Vacancy-page .jobLink {
+  height: auto;
+  min-height: 120px;
+}
+
+.Vacancy-page .jobLink > div {
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    width: calc(100% - 32px);
+    padding: 32px 0;
+  }
+
+  .about-intro {
+    padding: 12px 0 40px;
+  }
+
+  .about-intro h1 {
+    font-size: 38px;
+  }
+
+  .process-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .Vacancy-page .job-container {
+    padding: 24px 16px;
+  }
+
+  .Vacancy-page .job-page {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 4px;
+  }
+
+  .Vacancy-page .job-one,
+  .Vacancy-page .job-two {
+    width: 100%;
+  }
+
+  .Vacancy-page .job-one > p:first-child {
+    font-size: 28px;
+  }
+
+  .Vacancy-page .job-one > div {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 12px !important;
+  }
+
+  .Vacancy-page .job-one button {
+    max-width: 100%;
+  }
+
+  .Vacancy-page .job-two img {
+    max-height: 220px;
+  }
+
+  .Vacancy-page .job-search {
+    grid-template-columns: minmax(0, 1fr);
+    padding: 16px 0;
+  }
+
+  .Vacancy-page .jobLink {
+    min-height: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .process-grid,
+  .about-details {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .About-page .process {
+    min-height: 0;
+  }
+
+  .About-page .aboutFinal {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .Vacancy-page .job-one > div > div {
+    max-width: 100%;
+  }
+}
+
+
+
+
